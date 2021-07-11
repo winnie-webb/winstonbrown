@@ -1,0 +1,16 @@
+.header {
+  &__logo {
+    position: absolute;
+    width: 7rem;
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    &Link {
+      padding-top: 3rem;
+      margin: 0 1rem;
+    }
+  }
+}
