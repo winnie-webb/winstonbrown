@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
 body {
   height: 200vh;
   font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
 }
 li {
   list-style: none;

@@ -1,32 +1,62 @@
 .hero {
-  color: #fff;
-  width: 100%;
   height: 100vh;
-  @include background-default;
-  background-image: linear-gradient(
-      100deg,
-      rgba(0, 0, 0, 0.9) 60%,
-      transparent 40%
-    ),
-    url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-attachment: fixed;
-  background-position: center;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem;
   &__contentWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80%;
+    height: 100%;
     padding: 2rem;
+    & p {
+      color: #1d7df8;
+      font-size: 2rem;
+      line-height: 3rem;
+      margin: 1rem 0;
+    }
   }
   &__btn {
-    width: 10rem;
-    padding: 0.8rem 1rem;
+    width: 16rem;
+    padding: 1.4rem 1rem;
     margin-top: 1rem;
-    background-color: rgb(241, 196, 15);
-    border-radius: 4rem;
-    font-weight: 600;
+    background-color: #1d7df8;
+    color: #fff;
+    border-radius: 0.6rem;
+    font-weight: 500;
   }
 }
+
 h1 {
-  font-size: 3.5rem;
+  font-size: 6rem;
+  color: #2c3e50;
+}
+
+.bubble {
+  width: 130px;
+  height: 130px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  &:hover {
+    transition: transform 0.4s !important;
+    transform: scale(1.1) !important;
+  }
+}
+
+.bubble.jshine {
+  background: linear-gradient(100deg, #12c2e9, #c471ed, #f64f59);
+  top: 25%;
+  right: 15%;
+}
+.bubble.sublime {
+  top: 45%;
+  right: 25%;
+  background: linear-gradient(100deg, #56ccf2, #2f80ed);
+}
+.bubble.timber {
+  top: 65%;
+  right: 15%;
+  background: linear-gradient(100deg, #1a2980, #26d0ce);
 }

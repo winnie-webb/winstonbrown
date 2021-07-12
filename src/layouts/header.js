@@ -1,14 +1,11 @@
 import React from "react";
-
+import logo from "../images/logo.png";
 const Header = () => {
   return (
-    <header className="header animate__animated animate__fadeInDown">
+    <header data-aos="fade-down" data-aos-duration="1500" className="header">
       <div className="header__logoWrapper">
         <a href="/">
-          <img
-            className="header__logo"
-            src="https://render.bitstrips.com/v2/cpanel/6972338-99036697696_3-s5-v1.png?transparent=1&palette=1"
-          />
+          <img className="header__logo" src={logo} />
         </a>
       </div>
       <nav>
