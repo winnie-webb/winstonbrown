@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import Head from "../components/head";
 import Header from "../layouts/header";
 import Hero from "../components/hero";
@@ -7,8 +7,10 @@ import MySkills from "../components/myskills";
 import "../sass/pages/index.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
-const homePage = () => {
+const HomePage = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <>
       <Head></Head>
@@ -24,4 +26,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default HomePage;
