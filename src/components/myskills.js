@@ -4,7 +4,7 @@ const MySkills = () => {
     <section className="myskills">
       <h2
         data-aos="fade-right"
-        data-aos-duration="1000"
+        data-aos-duration="1500"
         className="myskills__heading heading"
       >
         My Skills
@@ -12,7 +12,7 @@ const MySkills = () => {
       <div className="myskills__showcase">
         <div
           data-aos="fade-up"
-          data-aos-duration="1200"
+          data-aos-duration="1500"
           className="skills frontend"
         >
           <h3 className="skills__heading">Frontend</h3>
@@ -27,7 +27,7 @@ const MySkills = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="1200"
+          data-aos-duration="1500"
           className="skills backend"
         >
           <h3 className="skills__heading">Backend</h3>
@@ -37,12 +37,13 @@ const MySkills = () => {
             <li>PHP</li>
             <li>Laravel</li>
             <li>EJS</li>
-            <li>API</li>
+            <li>Graphql</li>
           </ul>
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="1200"
+          data-aos-duration="1500"
+          data-aos-delay
           className="skills other"
         >
           <h3 className="skills__heading">Tools</h3>
@@ -61,3 +62,5 @@ const MySkills = () => {
 };
 
 export default MySkills;
+// Make navbar sticky
+// Add delay to animations

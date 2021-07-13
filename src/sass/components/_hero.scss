@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80%;
+    height: 110%;
     padding: 2rem;
     & p {
       color: #1d7df8;
@@ -46,7 +46,6 @@ h1 {
 .bubble {
   width: 13rem;
   height: 13rem;
-  border: 0.1rem solid white;
   border-radius: 50%;
   position: absolute;
   &:hover {
@@ -74,7 +73,7 @@ h1 {
   .hero {
     height: fit-content;
     &__contentWrapper {
-      margin-top: 3rem;
+      margin-top: 7rem;
     }
   }
   .bubble__wrapper {

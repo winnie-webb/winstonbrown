@@ -4,15 +4,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 .skills {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   color: #fff;
   text-align: center;
   margin-top: 3rem;
   padding: 3rem 2rem;
   border-radius: 0.6rem;
+  &:hover {
+    transition: box-shadow 0.4s, transform 0.4s !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    transform: translateY(-0.5rem) !important;
+  }
   &__heading {
     font-size: 3rem;
   }

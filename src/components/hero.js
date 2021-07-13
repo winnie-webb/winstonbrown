@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "../layouts/header";
 
 // Libraries
 import TypeIt from "typeit";
@@ -22,7 +21,6 @@ const Hero = () => {
 
   return (
     <section className="hero">
-      <Header></Header>
       <div className="hero__contentWrapper">
         <h1 className="hero__heading"></h1>
         <p className="hero__content"></p>

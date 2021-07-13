@@ -1,5 +1,11 @@
 .header {
   display: flex;
+  justify-content: center;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
   &__logo {
     width: 10rem;
   }

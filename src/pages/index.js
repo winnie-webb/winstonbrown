@@ -1,5 +1,6 @@
 import * as React from "react";
 import Head from "../components/head";
+import Header from "../layouts/header";
 import Hero from "../components/hero";
 import Projects from "../components/projects";
 import MySkills from "../components/myskills";
@@ -11,6 +12,7 @@ const homePage = () => {
   return (
     <>
       <Head></Head>
+      <Header></Header>
       <main>
         <article>
           <Hero></Hero>
