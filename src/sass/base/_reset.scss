@@ -5,6 +5,12 @@
 }
 html {
   font-size: 10px;
+  @media (max-width: 400px) {
+    font-size: 8px;
+  }
+  @media (max-width: 300px) {
+    font-size: 7px;
+  }
 }
 body {
   height: 200vh;

@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: 80%;
     padding: 2rem;
     & p {
       color: #1d7df8;
@@ -26,17 +26,27 @@
     border-radius: 0.6rem;
     font-weight: 500;
   }
+  @media (max-width: 450px) {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 h1 {
   font-size: 6rem;
   color: #2c3e50;
+  @media (max-width: 660px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 460px) {
+    font-size: 4rem;
+  }
 }
 
 .bubble {
-  width: 130px;
-  height: 130px;
-  border: 1px solid white;
+  width: 13rem;
+  height: 13rem;
+  border: 0.1rem solid white;
   border-radius: 50%;
   position: absolute;
   &:hover {
@@ -59,4 +69,18 @@ h1 {
   top: 65%;
   right: 15%;
   background: linear-gradient(100deg, #1a2980, #26d0ce);
+}
+@media (max-width: 1075px) {
+  .hero {
+    height: fit-content;
+    &__contentWrapper {
+      margin-top: 3rem;
+    }
+  }
+  .bubble__wrapper {
+    display: flex;
+    & .bubble {
+      position: static;
+    }
+  }
 }

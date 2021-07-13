@@ -1,14 +1,12 @@
 .header {
+  display: flex;
   &__logo {
-    width: 11rem;
-    position: absolute;
+    width: 10rem;
   }
   &__nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    margin: 0 1rem;
     &Link {
       padding-top: 4.8rem;
       margin: 0 1rem;

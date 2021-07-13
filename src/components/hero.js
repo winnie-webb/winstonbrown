@@ -26,7 +26,13 @@ const Hero = () => {
       <div className="hero__contentWrapper">
         <h1 className="hero__heading"></h1>
         <p className="hero__content"></p>
-        <button className="projects-view btn hero__btn">See projects</button>
+        <button
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="projects-view btn hero__btn"
+        >
+          See projects
+        </button>
       </div>
       <div className="bubble__wrapper">
         <div
