@@ -1,0 +1,29 @@
+.aboutme {
+  padding: 3rem;
+  background-color: #ecf0f1;
+
+  &__contentWrapper {
+    flex: 1;
+  }
+  &__content {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+  &__imageWrapper {
+    flex: 1;
+    height: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.aboutme__main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}

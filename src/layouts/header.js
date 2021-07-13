@@ -20,6 +20,7 @@ const Header = () => {
           <li className="header__navLink">Projects</li>
           <li className="header__navLink">My Skills</li>
           <li className="header__navLink">About Me</li>
+          <li className="header__navLink">Contact Me</li>
         </ul>
       </nav>
     </header>
