@@ -25,17 +25,8 @@ li {
   outline: none;
   cursor: pointer;
 }
-.loader {
-  width: 100vw;
-  height: 100vh;
-  background-color: #34495e;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  color: #fff;
-  text-align: center;
-  @include center-flex;
-  &__heading {
-    font-size: 4rem;
-  }
+.heading {
+  font-size: 4rem;
+  text-decoration: underline;
+  text-transform: uppercase;
 }

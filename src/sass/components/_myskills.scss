@@ -1,0 +1,39 @@
+.myskills {
+  padding: 3rem;
+  &__showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.skills {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  color: #fff;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3rem 2rem;
+  border-radius: 0.6rem;
+  &__heading {
+    font-size: 3rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    li {
+      margin: 1rem 0;
+      text-transform: uppercase;
+    }
+  }
+}
+.skills.frontend {
+  background: linear-gradient(to right bottom, #1488cc, #2b32b2);
+}
+.skills.backend {
+  background-color: #2d3436;
+}
+.skills.other {
+  background-color: #2ecc71;
+}

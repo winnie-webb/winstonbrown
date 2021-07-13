@@ -2,9 +2,7 @@
   padding: 3rem;
   background-color: #ecf0f1;
   &__heading {
-    font-size: 4rem;
-    margin: 2rem 0;
-    text-decoration: underline;
+    margin-bottom: 3rem;
   }
   @media (max-width: 430px) {
     padding: 1rem;
@@ -43,11 +41,7 @@
   justify-content: center;
   align-items: center;
   & span {
-    background: linear-gradient(
-      to right bottom,
-      #1488cc,
-      #2b32b2
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, #1488cc, #2b32b2);
     color: #fff;
     border-radius: 4rem;
     padding: 1rem 1.6rem;

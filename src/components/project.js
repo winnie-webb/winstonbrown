@@ -3,9 +3,9 @@ import githubIcon from "../images/github-icon-white.png";
 const Project = (props) => {
   const { imgSrc, projectTags } = props.project;
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" className="project">
+    <div data-aos="fade-up" data-aos-duration="1200" className="project">
       <div className="project__imageWrapper">
-        <img alt="Etracky Screenshot" src={imgSrc} />
+        <img src={imgSrc} alt="" />
       </div>
       <div className="project__contentWrapper">
         {/* <p className="project__content">{projectDescription}</p> */}
@@ -21,7 +21,7 @@ const Project = (props) => {
       </div>
       <div className="project__links">
         <div className="view-code project__link">
-          <img src={githubIcon} />
+          <img src={githubIcon} alt="github icon light" />
           <span>View Code</span>
         </div>
         <div className="view-site project__link">
