@@ -1,15 +1,16 @@
 import React from "react";
 import githubIcon from "../images/github-icon-white.png";
 const Project = (props) => {
-  const { imgSrc, projectTags } = props.project;
+  const { imgSrc, projectTags, projectDescription } = props.project;
   return (
     <div data-aos="fade-up" data-aos-duration="1200" className="project">
       <div className="project__imageWrapper">
         <img src={imgSrc} alt="" />
+        <div className="project__description">
+          <p className="project__content">{projectDescription}</p>
+        </div>
       </div>
-      <div className="project__contentWrapper">
-        {/* <p className="project__content">{projectDescription}</p> */}
-      </div>
+
       <div className="project__tags">
         {projectTags.map((tagText, index) => {
           return (
