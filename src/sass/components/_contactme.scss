@@ -1,0 +1,86 @@
+.contactme {
+  display: flex;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  border-radius: 1rem;
+  width: 90%;
+  height: 85vh;
+  margin: 3rem auto;
+  &__formWrapper {
+    width: 60%;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+  }
+  &__form {
+    padding-top: 4rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  &__detailsWrapper {
+    border-radius: 1rem;
+    height: 100%;
+    width: 50%;
+    background-color: #1d7df8;
+    color: #fff;
+    padding: 3rem;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid #d7dddf;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+  &:focus {
+    border: 1px solid #000000;
+  }
+}
+.contactme__details {
+  margin: 2rem 0;
+}
+.contactme__detailsHeading {
+  font-size: 3rem;
+}
+.contactme__formMessage {
+  grid-column: span 2;
+  & textarea {
+    min-height: 15rem;
+  }
+}
+.contactme__formHeading {
+  font-size: 3rem;
+  text-align: center;
+}
+.email-icon {
+  font-size: 3rem;
+}
+.contactme__btn {
+  padding: 1.5rem;
+  grid-column: span 2;
+  background-color: #34495e;
+  color: #fff;
+  border-radius: 0.5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.contactme__details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70%;
+  &Content {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
