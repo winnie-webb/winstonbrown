@@ -10,7 +10,7 @@ export const Head = () => {
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet"
       />
-      <link rel="icon" type="image/webp" href="../images/logo.webp" />
+      <link rel="icon" type="image/webP" href="../images/logo.webP" />
       <title>Winston Brown Portfolio</title>
     </Helmet>
   );

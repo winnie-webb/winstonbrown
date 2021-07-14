@@ -1,5 +1,5 @@
 import React from "react";
-import githubIcon from "../images/github-icon-white.webp";
+import githubIcon from "../images/github-icon-white.webP";
 import viewSiteIcon from "../images/view-site.svg";
 const Project = (props) => {
   const { imgSrc, projectTags, projectDescription } = props.project;

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import logo from "../images/logo.webp";
+import logo from "../images/logo.webP";
 const Header = () => {
   const headerRef = useRef();
 
