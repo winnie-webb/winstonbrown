@@ -15,35 +15,64 @@ const Contactme = () => {
             <span className="email-icon">✆ </span>
             +1 (876) 832-2562
           </p>
-
-          <p className="contactme__detailsContent">
-            <img src={githubIcon} />
-            <span> My Github</span>
-          </p>
+          <a
+            className="github-link"
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/winnie-webb"
+          >
+            <p className="contactme__detailsContent">
+              <img src={githubIcon} alt="github icon" />
+              <span> My Github</span>
+            </p>
+          </a>
         </div>
       </div>
       <div className="contactme__formWrapper">
         <h2 className="contactme__formHeading">Contact Me</h2>
         <form className="contactme__form">
           <div className="inputWrapper">
-            <label>Your Name *</label>
-            <input className="form__input" required></input>
+            <label htmlFor="name">Your Name *</label>
+            <input
+              id="name"
+              name="name"
+              className="form__input"
+              required
+            ></input>
           </div>
           <div className="inputWrapper">
-            <label>Your Email *</label>
-            <input className="form__input" required></input>
+            <label htmlFor="name">Your Email *</label>
+            <input
+              id="name"
+              name="email"
+              className="form__input"
+              required
+            ></input>
           </div>
           <div className="inputWrapper">
-            <label>Phone Number</label>
-            <input className="form__input"></input>
+            <label htmlFor="phone-number">Phone Number</label>
+            <input
+              id="phone-number"
+              name="phone-number"
+              className="form__input"
+            ></input>
           </div>
           <div className="inputWrapper">
-            <label>Company Name</label>
-            <input className="form__input"></input>
+            <label htmlFor="company-name">Company Name</label>
+            <input
+              id="company-name"
+              name="company-name"
+              className="form__input"
+            ></input>
           </div>
           <div className="contactme__formMessage inputWrapper">
-            <label>Message *</label>
-            <textarea className="form__input" required></textarea>
+            <label htmlFor="message">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              className="form__input"
+              required
+            ></textarea>
           </div>
           <button type="submit" className="btn contactme__btn">
             Send Message

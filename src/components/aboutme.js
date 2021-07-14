@@ -26,7 +26,7 @@ const Aboutme = () => {
           data-aos-duration="1200"
           className="aboutme__imageWrapper"
         >
-          <img src={aboutmeImage} />
+          <img src={aboutmeImage} alt="About me undraw svg" />
         </div>
       </div>
     </section>

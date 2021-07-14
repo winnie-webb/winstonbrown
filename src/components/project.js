@@ -6,7 +6,7 @@ const Project = (props) => {
   return (
     <div data-aos="fade-up" data-aos-duration="1200" className="project">
       <div className="project__imageWrapper">
-        <img src={imgSrc} alt="" />
+        <img src={imgSrc} alt="Screenshot of project" />
         <div className="project__description">
           <p className="project__content">{projectDescription}</p>
         </div>
@@ -27,7 +27,7 @@ const Project = (props) => {
           <span>View Code</span>
         </div>
         <div className="view-site project__link">
-          <img src={viewSiteIcon} />
+          <img alt="live icon" src={viewSiteIcon} />
           <span>View Site </span>
         </div>
       </div>

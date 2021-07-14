@@ -12,7 +12,7 @@ const Header = () => {
     >
       <div className="header__logoWrapper">
         <a href="/">
-          <img className="header__logo" src={logo} />
+          <img alt="Black Bitmoji" className="header__logo" src={logo} />
         </a>
       </div>
       <nav>
