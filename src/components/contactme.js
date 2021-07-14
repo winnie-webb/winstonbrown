@@ -1,5 +1,5 @@
 import React from "react";
-import githubIcon from "../images/github-icon-white.webP";
+import githubIcon from "../images/github-icon-white.png";
 const Contactme = () => {
   return (
     <section data-aos="zoom-in" data-aos-duration="1200" className="contactme">
