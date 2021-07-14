@@ -1,7 +1,7 @@
-import etrackyImage from "../images/etracky.png";
-import tonyartsImage from "../images/tonyarts.png";
-import btImage from "../images/bt.png";
-import jettImage from "../images/jett.png";
+import etrackyImage from "../images/etracky.webp";
+import tonyartsImage from "../images/tonyarts.webp";
+import btImage from "../images/bt.webp";
+import jettImage from "../images/jett.webp";
 
 const etrackyTags = ["MongoDb", "ExpressJS", "ReactJS", "NodeJS"];
 const etrackyDescription = `
