@@ -2,7 +2,13 @@ import React from "react";
 import githubIcon from "../images/github-icon-white.png";
 import viewSiteIcon from "../images/view-site.svg";
 const Project = (props) => {
-  const { imgSrc, projectTags, projectDescription } = props.project;
+  const {
+    imgSrc,
+    projectTags,
+    projectDescription,
+    projectGithubLink,
+    projectSiteLink,
+  } = props.project;
   return (
     <div data-aos="fade-up" data-aos-duration="1200" className="project">
       <div className="project__imageWrapper">
@@ -22,14 +28,18 @@ const Project = (props) => {
         })}
       </div>
       <div className="project__links">
-        <div className="view-code project__link">
-          <img src={githubIcon} alt="github icon light" />
-          <span>View Code</span>
-        </div>
-        <div className="view-site project__link">
-          <img alt="live icon" src={viewSiteIcon} />
-          <span>View Site </span>
-        </div>
+        <a href={projectGithubLink} target="_blank">
+          <div className="view-code project__link">
+            <img src={githubIcon} alt="github icon light" />
+            <span>View Code</span>
+          </div>
+        </a>
+        <a href={projectSiteLink} target="_blank">
+          <div className="view-site project__link">
+            <img alt="live icon" src={viewSiteIcon} />
+            <span>View Site </span>
+          </div>
+        </a>
       </div>
     </div>
   );

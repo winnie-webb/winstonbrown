@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 
 // Libraries
 import TypeIt from "typeit";
-const Hero = () => {
+const Hero = (props) => {
+  const { heroSectionRef } = props;
   // Run typing animation for heading
   useEffect(() => {
     new TypeIt(".hero__heading", {
@@ -20,7 +21,7 @@ const Hero = () => {
   });
 
   return (
-    <section className="hero">
+    <section ref={heroSectionRef} className="hero">
       <div className="hero__contentWrapper">
         <h1 className="hero__heading"></h1>
         <p className="hero__content"></p>

@@ -6,6 +6,7 @@ import Projects from "../components/projects";
 import MySkills from "../components/myskills";
 import Aboutme from "../components/aboutme";
 import Contactme from "../components/contactme";
+import Footer from "../layouts/footer";
 import "../sass/pages/index.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,11 +18,13 @@ const HomePage = () => {
   const myskillsSectionRef = useRef();
   const aboutmeSectionRef = useRef();
   const contactmeSectionRef = useRef();
+  const heroSectionRef = useRef();
   const refs = {
     projectsSectionRef,
     myskillsSectionRef,
     aboutmeSectionRef,
     contactmeSectionRef,
+    heroSectionRef,
   };
   return (
     <>
@@ -29,12 +32,13 @@ const HomePage = () => {
       <Header refs={refs}></Header>
       <main>
         <article>
-          <Hero></Hero>
+          <Hero heroSectionRef={heroSectionRef}></Hero>
           <Projects projectsSectionRef={projectsSectionRef}></Projects>
           <MySkills myskillsSectionRef={myskillsSectionRef}></MySkills>
           <Aboutme aboutmeSectionRef={aboutmeSectionRef}></Aboutme>
           <Contactme contactmeSectionRef={contactmeSectionRef}></Contactme>
         </article>
+        <Footer></Footer>
       </main>
     </>
   );

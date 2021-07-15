@@ -1,0 +1,9 @@
+footer {
+  padding: 2rem;
+  background-color: #192a56;
+  & p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

@@ -6,13 +6,17 @@ const Header = (props) => {
     myskillsSectionRef,
     aboutmeSectionRef,
     contactmeSectionRef,
+    heroSectionRef,
   } = props.refs;
   return (
     <header data-aos="fade-down" data-aos-duration="1500" className="header">
-      <div className="header__logoWrapper">
-        <a href="/">
-          <img alt="Black Bitmoji" className="header__logo" src={logo} />
-        </a>
+      <div
+        onClick={() => {
+          heroSectionRef.current.scrollIntoView({ behavior: "smooth" });
+        }}
+        className="header__logoWrapper"
+      >
+        <img alt="Black Bitmoji" className="header__logo" src={logo} />
       </div>
       <nav>
         <ul className="header__nav">
