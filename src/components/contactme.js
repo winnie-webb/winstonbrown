@@ -36,7 +36,12 @@ const Contactme = (props) => {
       </div>
       <div className="contactme__formWrapper">
         <h2 className="contactme__formHeading">Contact Me</h2>
-        <form className="contactme__form">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="contactme__form"
+        >
           <div className="inputWrapper">
             <label htmlFor="name">Your Name *</label>
             <input
