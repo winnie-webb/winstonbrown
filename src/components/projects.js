@@ -1,11 +1,12 @@
 import React from "react";
 import projectsObject from "./projects-objects";
 import Project from "./project";
-const Projects = () => {
+const Projects = (props) => {
+  const { projectsSectionRef } = props;
   const { etrackyProject, tonyartsProject, btProject, jettProject } =
     projectsObject;
   return (
-    <section className="projects">
+    <section ref={projectsSectionRef} className="projects">
       <h2
         data-aos="fade-right"
         data-aos-duration="1000"

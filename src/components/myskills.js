@@ -1,7 +1,8 @@
 import React from "react";
-const MySkills = () => {
+const MySkills = (props) => {
+  const { myskillsSectionRef } = props;
   return (
-    <section className="myskills">
+    <section ref={myskillsSectionRef} className="myskills">
       <h2
         data-aos="fade-right"
         data-aos-duration="1500"

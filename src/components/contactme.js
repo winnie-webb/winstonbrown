@@ -1,8 +1,14 @@
 import React from "react";
 import githubIcon from "../images/github-icon-white.png";
-const Contactme = () => {
+const Contactme = (props) => {
+  const { contactmeSectionRef } = props;
   return (
-    <section data-aos="zoom-in" data-aos-duration="1200" className="contactme">
+    <section
+      ref={contactmeSectionRef}
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className="contactme"
+    >
       <div className="contactme__detailsWrapper">
         <h2 className="contactme__detailsHeading">Contact Info</h2>
         <div className="contactme__details">

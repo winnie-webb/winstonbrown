@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Head from "../components/head";
 import Header from "../layouts/header";
 import Hero from "../components/hero";
@@ -13,17 +13,27 @@ const HomePage = () => {
   useEffect(() => {
     AOS.init();
   });
+  const projectsSectionRef = useRef();
+  const myskillsSectionRef = useRef();
+  const aboutmeSectionRef = useRef();
+  const contactmeSectionRef = useRef();
+  const refs = {
+    projectsSectionRef,
+    myskillsSectionRef,
+    aboutmeSectionRef,
+    contactmeSectionRef,
+  };
   return (
     <>
       <Head></Head>
-      <Header></Header>
+      <Header refs={refs}></Header>
       <main>
         <article>
           <Hero></Hero>
-          <Projects></Projects>
-          <MySkills></MySkills>
-          <Aboutme></Aboutme>
-          <Contactme></Contactme>
+          <Projects projectsSectionRef={projectsSectionRef}></Projects>
+          <MySkills myskillsSectionRef={myskillsSectionRef}></MySkills>
+          <Aboutme aboutmeSectionRef={aboutmeSectionRef}></Aboutme>
+          <Contactme contactmeSectionRef={contactmeSectionRef}></Contactme>
         </article>
       </main>
     </>

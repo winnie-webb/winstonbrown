@@ -16,6 +16,7 @@
   padding: 2rem;
   border-radius: 0.4rem;
   width: 100%;
+  height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   &:hover {
     transition: box-shadow 0.4s, transform 0.4s !important;

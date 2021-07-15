@@ -1,8 +1,9 @@
 import React from "react";
 import aboutmeImage from "../images/aboutme.svg";
-const Aboutme = () => {
+const Aboutme = (props) => {
+  const { aboutmeSectionRef } = props;
   return (
-    <section className="aboutme">
+    <section ref={aboutmeSectionRef} className="aboutme">
       <h2 data-aos="fade-right" data-aos-duration="1200" className="heading">
         About Me
       </h2>

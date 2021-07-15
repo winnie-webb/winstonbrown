@@ -1,15 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import logo from "../images/logo.png";
-const Header = () => {
-  const headerRef = useRef();
-
+const Header = (props) => {
+  const {
+    projectsSectionRef,
+    myskillsSectionRef,
+    aboutmeSectionRef,
+    contactmeSectionRef,
+  } = props.refs;
   return (
-    <header
-      ref={headerRef}
-      data-aos="fade-down"
-      data-aos-duration="1500"
-      className="header"
-    >
+    <header data-aos="fade-down" data-aos-duration="1500" className="header">
       <div className="header__logoWrapper">
         <a href="/">
           <img alt="Black Bitmoji" className="header__logo" src={logo} />
@@ -17,10 +16,40 @@ const Header = () => {
       </div>
       <nav>
         <ul className="header__nav">
-          <li className="header__navLink">Projects</li>
-          <li className="header__navLink">My Skills</li>
-          <li className="header__navLink">About Me</li>
-          <li className="header__navLink">Contact Me</li>
+          <li
+            onClick={() => {
+              projectsSectionRef.current.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="header__navLink"
+          >
+            Projects
+          </li>
+          <li
+            onClick={() => {
+              myskillsSectionRef.current.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="header__navLink"
+          >
+            My Skills
+          </li>
+          <li
+            onClick={() => {
+              aboutmeSectionRef.current.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="header__navLink"
+          >
+            About Me
+          </li>
+          <li
+            onClick={() => {
+              contactmeSectionRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+            className="header__navLink"
+          >
+            Contact Me
+          </li>
         </ul>
       </nav>
     </header>

@@ -7,8 +7,8 @@
   position: fixed;
   z-index: 10;
   &__logo {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
   }
   &__nav {
     display: flex;
@@ -17,6 +17,10 @@
     &Link {
       padding-top: 4.8rem;
       margin: 0 1rem;
+      cursor: pointer;
     }
+  }
+  @media (max-width: 400px) {
+    justify-content: flex-start;
   }
 }

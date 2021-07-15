@@ -29,6 +29,13 @@
     background-color: #1d7df8;
     color: #fff;
     padding: 3rem;
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    height: fit-content;
   }
 }
 
