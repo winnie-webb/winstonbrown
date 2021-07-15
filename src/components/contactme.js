@@ -37,6 +37,8 @@ const Contactme = (props) => {
           data-netlify="true"
           className="contactme__form"
         >
+          <input type="hidden" name="form-name" value="contact" />
+
           <div className="inputWrapper">
             <label htmlFor="name">Your Name *</label>
             <input
