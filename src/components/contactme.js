@@ -3,12 +3,7 @@ import githubIcon from "../images/github-icon-white.png";
 const Contactme = (props) => {
   const { contactmeSectionRef } = props;
   return (
-    <section
-      ref={contactmeSectionRef}
-      data-aos="fade-up"
-      data-aos-duration="1200"
-      className="contactme"
-    >
+    <section ref={contactmeSectionRef} className="contactme">
       <div className="contactme__detailsWrapper">
         <h2 className="contactme__detailsHeading">Contact Info</h2>
         <div className="contactme__details">

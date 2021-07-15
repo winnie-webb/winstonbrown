@@ -10,7 +10,7 @@ const Project = (props) => {
     projectSiteLink,
   } = props.project;
   return (
-    <div data-aos="fade-up" data-aos-duration="1200" className="project">
+    <div className="project">
       <div className="project__imageWrapper">
         <img src={imgSrc} alt="Screenshot of project" />
         <div className="project__description">

@@ -7,13 +7,7 @@ const Projects = (props) => {
     projectsObject;
   return (
     <section ref={projectsSectionRef} className="projects">
-      <h2
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        className="projects__heading heading"
-      >
-        Projects
-      </h2>
+      <h2 className="projects__heading heading">Projects</h2>
       <div className="projects-showcase">
         <Project project={etrackyProject}></Project>
         <Project project={tonyartsProject}></Project>
