@@ -14,7 +14,7 @@ const etrackyProject = {
   projectTags: etrackyTags,
   projectDescription: etrackyDescription,
   projectGithubLink: "https://github.com/winnie-webb/basic-mvc-app",
-  projectSiteLink: "https://etracky.herokuapp.com/",
+  projectSiteLink: "https://etracky.herokuapp.com/?fromMySite=true",
   imgSrc: etrackyImage,
 };
 const tonyartsTags = ["Gatsby", "Getforms API", "SASS", "Gatsby Cloud"];
